@@ -18,6 +18,12 @@ section h2{
     font-size: 1.25rem;
     font-weight: 600;
     color: #E2E2E2;
+    margin-bottom: 1rem;
+    letter-spacing: 0.04rem;
+}
+section hr{
+    margin: 2rem 0;
+    opacity: 0.3;
 }
 
 .intro{
@@ -60,15 +66,11 @@ border-radius: 50px;
     letter-spacing: 0.025rem;
     color: #9ca3af;
 }
-.intro hr{
-    margin: 1.25rem 0;
-    opacity: 0.3;
-}
 
 .tech .techBox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 .techBox>div{
     background: #282928;
@@ -86,6 +88,8 @@ border-radius: 50px;
 }
 .techBox>div span{
     font-size: 0.75rem;
+    letter-spacing: 0.04rem;
+    margin-top: 0.25rem;
 }
 .techBox>div:hover{
     background-color: #171717;
