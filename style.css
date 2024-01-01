@@ -14,6 +14,11 @@ section{
     margin: 0 auto;
     color: #E2E2E2;
 }
+section h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #E2E2E2;
+}
 
 .intro{
     margin-top: 10rem;
@@ -43,9 +48,47 @@ section{
     text-decoration: none;
     color: white;
     font-size: 0.75rem;
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(255, 255, 255, 0.345);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 50px;
 }
+.intro p{
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.025rem;
+    color: #9ca3af;
+}
+.intro hr{
+    margin: 1.25rem 0;
+    opacity: 0.3;
+}
+
+.tech .techBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.techBox>div{
+    background: #282928;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 12px;
+}
+.techBox>div svg{
+    width: 2.25rem;
+    fill: white;
+}
+.techBox>div span{
+    font-size: 0.75rem;
+}
+.techBox>div:hover{
+    background-color: #171717;
+    transition-duration: 200ms ease-in;
+}
+
