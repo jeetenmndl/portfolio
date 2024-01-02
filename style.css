@@ -96,3 +96,39 @@ border-radius: 50px;
     transition-duration: 200ms ease-in;
 }
 
+.projects>.projectBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+.projectBox>a{
+    padding: 1.5rem;
+    background: #282928;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.projectBox>a h3{
+    font-size: 1rem;
+    color: #E2E2E2;
+    letter-spacing: 0.04rem;
+    margin-bottom: 1rem;
+    margin-top: 0.75rem;
+}
+
+.projectBox>a p{
+    font-size: 0.825rem;
+    color: #9ca3af;
+    line-height: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.projectBox .iconsList{
+    display: flex;
+    gap: 0.5rem;
+}
+.projectBox .iconsList svg{
+    fill: white;
+    width: 20px;
+}
