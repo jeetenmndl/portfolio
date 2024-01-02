@@ -50,14 +50,33 @@ section hr{
     gap: 1rem;
 }
 .intro .buttonBox a{
-    padding: 0.5rem 1.25rem;
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
     color: white;
     font-size: 0.75rem;
-    background: rgba(255, 255, 255, 0.345);
+    letter-spacing: 0.025rem;
+    background: rgb(246 246 246 / 25%);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.intro .buttonBox a:hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    transition: 100ms ease-in-out;
+}
+.intro .buttonBox a:hover .buttonBox a svg{
+    fill: black;
+}
+
+
+.intro .buttonBox a svg{
+    width: 0.75rem;
 }
 .intro p{
     margin-top: 1.5rem;
