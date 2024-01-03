@@ -67,14 +67,12 @@ gap: 10px;
 .intro .buttonBox a:hover{
     background-color: white;
     color: black;
-    font-weight: 600;
+    font-weight: 800;
     transition: 100ms ease-in-out;
 }
 .intro .buttonBox a:hover .buttonBox a svg{
     fill: black;
 }
-
-
 .intro .buttonBox a svg{
     width: 0.75rem;
 }
@@ -86,12 +84,13 @@ gap: 10px;
     color: #9ca3af;
 }
 
-.tech .techBox{
+
+.tech .techBox, .tools .toolsBox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.75rem;
 }
-.techBox>div{
+.techBox>div, .toolsBox>div{
     background: #282928;
     padding: 2rem;
     display: flex;
@@ -101,16 +100,16 @@ gap: 10px;
     border-radius: 8px;
     gap: 12px;
 }
-.techBox>div svg{
+.techBox>div svg, .toolsBox>div svg{
     width: 2.25rem;
     fill: white;
 }
-.techBox>div span{
+.techBox>div span, .toolsBox>div span{
     font-size: 0.75rem;
     letter-spacing: 0.04rem;
     margin-top: 0.25rem;
 }
-.techBox>div:hover{
+.techBox>div:hover, .toolsBox>div:hover{
     background-color: #171717;
     transition-duration: 200ms ease-in;
 }
@@ -126,7 +125,9 @@ gap: 10px;
     border-radius: 8px;
     text-decoration: none;
 }
-
+.projectBox>a:hover{
+    background-color: #171717;
+}
 .projectBox>a h3{
     font-size: 1rem;
     color: #E2E2E2;
