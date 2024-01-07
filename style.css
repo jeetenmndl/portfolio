@@ -189,6 +189,3 @@ gap: 10px;
     width: 30px;
     height: 30px;
 }
-.rolesBox div:hover .rolesBox div svg{
-    fill: purple;
-}
