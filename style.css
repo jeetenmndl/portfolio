@@ -189,3 +189,25 @@ gap: 10px;
     width: 30px;
     height: 30px;
 }
+.bottomName{
+    padding-top: 30px;
+    position: relative;
+}
+.bottomName span{
+    font-size: 8rem;
+    font-weight: bolder;
+    position: sticky;
+    bottom: 0;
+    letter-spacing: -5px;
+    line-height: 2rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.bottomName .b{
+    color: #282928;
+}
+
+.bottomName .c{
+    color: #171717;
+}
