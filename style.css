@@ -194,20 +194,76 @@ gap: 10px;
     position: relative;
 }
 .bottomName span{
+    font-family: "Tektur";
     font-size: 8rem;
-    font-weight: bolder;
+    font-weight: 800;
     position: sticky;
     bottom: 0;
-    letter-spacing: -5px;
     line-height: 2rem;
     display: flex;
     align-items: baseline;
+    justify-content: center;
 }
 
 .bottomName .b{
-    color: #282928;
+    color: gray;
+}
+
+.bottomName .b{
+    color: #383838;
 }
 
 .bottomName .c{
     color: #171717;
+}
+
+
+@media screen and (max-width: 400px){
+    :root{
+        font-size: 12px;
+    }
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+    section{
+        margin: 0 1.5rem;
+        max-width: calc( 100% - 3rem);
+    }
+    .techBox>div, .toolsBox>div {
+        padding: 1.5rem;
+    }
+    .techBox>div svg, .toolsBox>div svg {
+        width: 2rem;
+    }
+    .projectBox .iconsList svg {
+        width: 16px;
+    }
+    .bottomName span{
+        font-size: 7rem;
+    }
+    .rolesBox div{
+        gap: 1rem;
+    }
+    .rolesBox div svg{
+        width: 20px;
+        height: 20px;
+    }
+    .rolesBox div h3{
+        font-size: 1.75rem;
+    }
+}
+@media screen and (max-width: 330) 
+{
+    :root{
+        font-size: 10px;
+    }
+    .projectBox>a{
+        padding: 1.25rem;
+    }
+    .techBox>div, .toolsBox>div {
+        padding: 1.5rem;
+    }
+    .bottomName span{
+        font-size: 6rem;
+    }
 }
