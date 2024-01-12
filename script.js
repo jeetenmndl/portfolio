@@ -1,4 +1,2 @@
-let hoverColor = (e)=>{
-    console.log(Element);
-    // e.style.fill = color;
-}
+// let size = document.querySelector(".jeeten");
+// size.innerHTML= document.querySelector("body").clientWidth;

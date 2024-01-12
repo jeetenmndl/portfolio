@@ -56,8 +56,8 @@ section hr{
     font-size: 0.75rem;
     letter-spacing: 0.025rem;
     background: rgb(246 246 246 / 25%);
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
+/* backdrop-filter: blur( 4px ); */
+/* -webkit-backdrop-filter: blur( 4px ); */
 border-radius: 50px;
 display: flex;
 align-items: center;
@@ -82,6 +82,8 @@ gap: 10px;
     line-height: 1.75rem;
     letter-spacing: 0.025rem;
     color: #9ca3af;
+    font-family: "Playfair Display";
+    font-style: italic;
 }
 
 
@@ -218,7 +220,7 @@ gap: 10px;
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     :root{
         font-size: 12px;
     }
@@ -230,7 +232,7 @@ gap: 10px;
         max-width: calc( 100% - 3rem);
     }
     .techBox>div, .toolsBox>div {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
     }
     .techBox>div svg, .toolsBox>div svg {
         width: 2rem;
@@ -250,9 +252,20 @@ gap: 10px;
     }
     .rolesBox div h3{
         font-size: 1.75rem;
+        padding: 0.5rem 1rem;
     }
+    .intro .buttonBox a{
+        font-size: 0.9rem;
+    }
+    .intro .buttonBox{
+        gap: 0.75rem;
+    }
+    section h2{
+        font-size: 1.75rem;
+    }
+
 }
-@media screen and (max-width: 330) 
+@media screen and (max-width: 330px) 
 {
     :root{
         font-size: 10px;
@@ -260,10 +273,8 @@ gap: 10px;
     .projectBox>a{
         padding: 1.25rem;
     }
-    .techBox>div, .toolsBox>div {
-        padding: 1.5rem;
-    }
-    .bottomName span{
-        font-size: 6rem;
+    .rolesBox div svg {
+        width: 16px;
+        height: 16px;
     }
 }
