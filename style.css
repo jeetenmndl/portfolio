@@ -86,6 +86,79 @@ gap: 10px;
     font-style: italic;
 }
 
+.timeline{
+    overflow: hidden;
+}
+.timelineBox{
+    display: flex;
+    /* transform:translateX(100%); */
+    animation: cssmarquee 10s linear infinite;
+    transition-delay: 10s;
+}
+@keyframes cssmarquee {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+ }
+.timelineBox .top, .timelineBox .bottom{
+    height: 7.5rem;
+    display: flex;
+    /* border: 1px solid white; */
+    /* border-bottom: 3px solid rgb(255, 0, 0); */
+    /* transform: rotate(-45deg); */
+    /* transform-origin: left; */
+}
+.timelineBox .top .connector{
+    height: 100%;
+    margin-left: 1.25rem;
+    width: 60px;
+    border-bottom: 0.1px solid white;
+    transform: rotate(-60deg);   
+}
+.timelineBox .top .card{
+    height: 4rem;
+    width: 20rem;
+    background-color: #282928;
+    margin-left: 2rem;
+    transform: translateY(5px);
+    border-radius: 8px;
+}
+.timelineBox .bottom{
+    align-items: baseline;
+}
+.timelineBox .bottom .connector{
+    height: 100%;
+    margin-left: 1.25rem;
+    width: 60px;
+    border-top: 0.1px solid white;
+    transform: rotate(60deg);   
+}
+.timelineBox .bottom .card{
+    height: 4rem;
+    width: 20rem;
+    background-color: #282928;
+    margin-left: 2rem;
+    transform: translateY(-5px);
+    border-radius: 8px;
+}
+.timelineBox .line{
+    background-color: white;
+    height: 1.5px;
+    position: relative;
+}
+.timelineBox .line .dot{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: -4.25px;
+    left: 5rem;
+    background-color: white;
+}
+
 
 .tech .techBox, .tools .toolsBox{
     display: grid;
