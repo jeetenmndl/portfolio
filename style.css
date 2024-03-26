@@ -89,11 +89,12 @@ gap: 10px;
 .timeline{
     overflow: hidden;
 }
+
 .timelineBox{
     display: flex;
     /* transform:translateX(100%); */
-    animation: cssmarquee 10s linear infinite;
-    transition-delay: 10s;
+    /* animation: cssmarquee 10s linear infinite; */
+    transition-duration: 1s;
 }
 @keyframes cssmarquee {
     0% {
@@ -105,44 +106,43 @@ gap: 10px;
  }
 .timelineBox .top, .timelineBox .bottom{
     height: 7.5rem;
+    padding-right: 0.25rem;
     display: flex;
+    position: relative;
+    overflow: hidden;
     /* border: 1px solid white; */
     /* border-bottom: 3px solid rgb(255, 0, 0); */
     /* transform: rotate(-45deg); */
     /* transform-origin: left; */
 }
-.timelineBox .top .connector{ 
+.timelineBox .connector{
     height: 100%;
     margin-left: 1.25rem;
     width: 60px;
+}
+.timelineBox .top .connector{ 
     border-bottom: 0.1px solid white;
     transform: rotate(-60deg);   
 }
-.timelineBox .top .card{
+.timelineBox .card{
     height: 4rem;
     width: 20rem;
     background-color: #282928;
     margin-left: 2rem;
-    transform: translateY(5px);
     border-radius: 8px;
 }
+.timelineBox .top .card{
+    transform: translateY(5px);
+}
 .timelineBox .bottom{
-    align-items: baseline;
+    align-items: flex-end;
 }
 .timelineBox .bottom .connector{
-    height: 100%;
-    margin-left: 1.25rem;
-    width: 60px;
     border-top: 0.1px solid white;
     transform: rotate(60deg);   
 }
 .timelineBox .bottom .card{
-    height: 4rem;
-    width: 20rem;
-    background-color: #282928;
-    margin-left: 2rem;
     transform: translateY(-5px);
-    border-radius: 8px;
 }
 .timelineBox .line{
     background-color: white;
@@ -158,6 +158,47 @@ gap: 10px;
     left: 5rem;
     background-color: white;
 }
+.timelineBox .card{
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.timelineBox .card span{
+    font-size: 0.825rem;
+    color: #9ca3af;
+    line-height: 1rem;
+    font-weight: 500;
+}
+.timelineBox .card p{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.timeline .slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 2rem;
+    transform: translateY(1.5rem);
+}
+.timeline .slider > div{
+    background-color: #282928;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.timeline .slider #leftSlider svg{
+    transform: translateX(-0.5px);
+}
+.timeline .slider #rightSlider svg{
+    transform: translateX(0.5px);
+}
+
 
 
 .tech .techBox, .tools .toolsBox{
@@ -241,7 +282,7 @@ gap: 10px;
     align-items: center;
 }
 .rolesBox div h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 1000;
     letter-spacing: 0.1rem;
     background-color: #282928;
@@ -253,7 +294,7 @@ gap: 10px;
 }
 .rolesBox div span{
     background-color: #282928;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.75rem;
     height: calc( 100% - 0.5rem );
     display: grid;
     place-items: center;
@@ -261,8 +302,8 @@ gap: 10px;
 }
 .rolesBox div svg{
     fill: white;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 .bottomName{
     padding-top: 30px;
@@ -336,7 +377,27 @@ gap: 10px;
     section h2{
         font-size: 1.75rem;
     }
-
+    .timelineBox .line .dot{
+        left: 3.5rem;
+    }
+    .timelineBox .connector{
+        margin-left: 0.75rem;
+    }
+    .timelineBox .connector{
+        margin-left: 0;
+        width: 40px;
+    }
+    .timelineBox .card{
+        width: 16rem;
+        /* margin-left: 0.5rem; */
+    }
+    .timelineBox .card p{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .timelineBox .top, .timelineBox .bottom{
+        padding-right: 1.5rem;
+    }
 }
 @media screen and (max-width: 330px) 
 {
