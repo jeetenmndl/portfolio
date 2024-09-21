@@ -56,13 +56,13 @@ section hr{
     font-size: 0.75rem;
     letter-spacing: 0.025rem;
     background: rgb(246 246 246 / 25%);
-/* backdrop-filter: blur( 4px ); */
-/* -webkit-backdrop-filter: blur( 4px ); */
-border-radius: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
+    /* backdrop-filter: blur( 4px ); */
+    /* -webkit-backdrop-filter: blur( 4px ); */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .intro .buttonBox a:hover{
     background-color: white;
@@ -81,7 +81,7 @@ gap: 10px;
     font-size: 1.125rem;
     line-height: 1.75rem;
     letter-spacing: 0.025rem;
-    color: #9ca3af;
+    color: #c2c4c9;
     font-family: "Playfair Display";
     font-style: italic;
 }
@@ -93,15 +93,14 @@ gap: 10px;
 .timelineBox{
     display: flex;
     /* transform:translateX(100%); */
-    /* animation: cssmarquee 10s linear infinite; */
-    transition-duration: 1s;
+    animation: cssmarquee 30s linear infinite;
 }
 @keyframes cssmarquee {
     0% {
     transform: translateX(0);
     }
     100% {
-    transform: translateX(-100%);
+    transform: translateX(-470%);
     }
  }
 .timelineBox .top, .timelineBox .bottom{
@@ -159,7 +158,7 @@ gap: 10px;
     background-color: white;
 }
 .timelineBox .card{
-    padding: 0.5rem 0.75rem;
+    padding: 0.55rem 0.75rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -170,6 +169,13 @@ gap: 10px;
     line-height: 1rem;
     font-weight: 500;
 }
+.card sup{
+    font-size: 0.75rem;
+}
+.timelineBox .card .date{
+    font-size: 0.70rem;
+    line-height: 0.75rem;
+}
 .timelineBox .card p{
     font-size: 1.25rem;
     line-height: 1.25rem;
@@ -178,6 +184,8 @@ gap: 10px;
 
 .timeline .slider{
     display: flex;
+    display: none;
+
     align-items: center;
     justify-content: space-between;
     padding: 0.25rem 2rem;

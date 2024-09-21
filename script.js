@@ -19,7 +19,7 @@ leftSlider.addEventListener("click",()=>{
 rightSlider.addEventListener("click",()=>{
     unit = (slide+1)*90;
     // if slide < 6 then 7 slides are shown 
-    if(slide<6){ 
+    if(slide<5){ 
         timelineBox.style.transform = `translateX(-${unit}%)`;
         slide++;
     }
