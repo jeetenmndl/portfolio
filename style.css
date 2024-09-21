@@ -94,6 +94,7 @@ section hr{
     display: flex;
     /* transform:translateX(100%); */
     animation: cssmarquee 30s linear infinite;
+    animation-delay: 3s;
 }
 @keyframes cssmarquee {
     0% {
